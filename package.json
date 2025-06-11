@@ -1,0 +1,32 @@
+{
+  "name": "linktree-basic-sdk",
+"version": "1.0.2",
+  "description": "A TypeScript SDK for interacting with the Linktree-like API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "sdk",
+    "typescript",
+    "linktree",
+    "api-client"
+  ],
+  "author": "Chiragkumar",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.9.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
